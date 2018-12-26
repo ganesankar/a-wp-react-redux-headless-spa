@@ -1,0 +1,44 @@
+/* TODO: Add styles */
+
+.album{
+    padding: 0.25rem 0.6rem !important;
+}
+.cardBodySm {
+    padding: 0.615rem 1.5rem !important;
+    font-size: 0.785rem;
+}
+
+.userListItem {
+    text-decoration: none;
+    color: #666666;
+    border:0px !important;
+    margin-bottom: 7px !important;
+}
+
+.userListItem:hover {
+    text-decoration: none;
+    color: #666666
+}
+
+.userListItemSpan {
+    color: #9a9a9a;
+    background-size: 6px;
+    background-position: right 12px;
+    background-repeat: no-repeat;
+    padding: 6px 17px 3px 0px;
+    font-size: 0.75rem;
+    min-height: 27px;
+    font-weight: 400;
+}
+.userListNumber{
+    color: #333333;
+    margin-top: 2px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.no_items{
+    color: #6c757d!important;
+    font-size: 20px;
+}
+

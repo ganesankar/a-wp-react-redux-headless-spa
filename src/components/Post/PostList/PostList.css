@@ -1,0 +1,174 @@
+/* POST LISTING ITEM COMPONENT JSX */
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+.cardStyle {
+  padding: 10px;
+  width: 100%;
+}
+.cardStyle .menuContent {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.cardStyle .menuContent::before,
+.cardStyle .menuContent::after {
+  content: '';
+  display: table;
+}
+.cardStyle .menuContent::after {
+  clear: both;
+}
+.cardStyle .menuContent li {
+  display: inline-block;
+}
+
+.cardStyle .menuContent a {
+  color: #fff;
+}
+
+.cardStyle .menuContent span {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  font-size: 10px;
+  font-weight: 700;
+  font-family: 'Open Sans';
+  transform: translate(-50%, 0);
+}
+
+.cardStyle .wrapper {
+  background-color: #fff;
+  min-height: 300px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.2);
+}
+
+.cardStyle .wrapper:hover .data {
+  transform: translateY(0);
+}
+
+.cardStyle .data {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  transform: translateY(calc(85px));
+  transition: transform 0.3s;
+}
+
+.cardStyle .data .content {
+  padding: 1em;
+  position: relative;
+  z-index: 1;
+}
+
+.cardStyle .author {
+  font-size: 12px;
+}
+
+.cardStyle .title {
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+.cardStyle .text {
+  height: 70px;
+  margin: 10px 0 0 0;
+  font-size: 75%;
+  overflow: hidden;
+}
+
+
+.cardStyle1 .wrapper {
+  background: url(https://tvseriescritic.files.wordpress.com/2016/10/stranger-things-bicycle-lights-children.jpg) center / cover no-repeat;
+}
+
+.cardStyle1 .wrapperContainer {
+  background: linear-gradient(0deg, #000000ad 0%, #00000000 50%);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: all 0.3s;
+}
+
+.cardStyle1 .wrapper:hover .menuContent span {
+  transform: translate(-50%, -10px);
+  opacity: 1;
+}
+
+.cardStyle1 .wrapper:hover .wrapperContainer {
+  background: linear-gradient(0deg, #000000d6 20%, #00000000 100%);
+}
+
+.cardStyle1 .header {
+  color: #fff;
+  padding: 1em;
+}
+
+.cardStyle1 .header::before,
+.cardStyle1 .header::after {
+  content: '';
+  display: table;
+}
+
+.cardStyle1 .header::after {
+  clear: both;
+}
+
+.cardStyle1 .header .date {
+  float: left;
+  font-size: 12px;
+}
+
+.cardStyle1 .menuContent {
+  float: right;
+}
+
+.cardStyle1 .menuContent li {
+  margin: 0 5px;
+  position: relative;
+}
+
+.cardStyle1 .menuContent span {
+  transition: all 0.3s;
+  opacity: 0;
+}
+
+.cardStyle1 .data {
+  color: #fff;
+  transform: translateY(calc(85px));
+}
+
+.cardStyle1 .title a {
+  color: #fff;
+}
+
+.cardStyle1 .button {
+  display: block;
+  width: 100px;
+  margin: 2em auto 1em;
+  text-align: center;
+  font-size: 12px;
+  color: #fff;
+  line-height: 1;
+  position: relative;
+  font-weight: 700;
+}
+
+.cardStyle1 .button::after {
+  content: '\2192';
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  transition: all 0.3s;
+}
+
+.cardStyle1 .button:hover::after {
+  transform: translate(5px, -50%);
+  opacity: 1;
+}

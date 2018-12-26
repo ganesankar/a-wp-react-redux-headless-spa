@@ -1,0 +1,12 @@
+/* ERROR ACTION CSS*/
+.img {
+    max-width: 248px;
+  }
+  
+  .FlexPage {
+    width: 100%;
+    min-height: calc(100vh);
+    background-color: #ffffff;
+  }
+  
+  

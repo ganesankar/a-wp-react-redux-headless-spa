@@ -1,0 +1,18 @@
+/*POST OR PAGE TITLE CSS*/
+.bgrTitleContainer {
+    min-height: 60vh;
+    width: 100%;
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 5em;
+}
+
+.bgrTitleContent {
+    color: #000000;
+    padding: 55vh 6px 10vh 0;
+    background: #f1f1f1;
+    background: -moz-linear-gradient(top, #ffffff00 0%, #f1f1f1 100%);
+    background: -webkit-linear-gradient(top, #ffffff00 0%, #f1f1f1 100%);
+    background: linear-gradient(to bottom, #ffffff00 0%, #f1f1f1 100%);
+}

@@ -1,0 +1,23 @@
+/*FooterCSS*/
+.footerArea {
+    background-color: #fff;
+    COLOR: #444343;
+    padding: 3rem 0;border-top:1px solid #dedede;
+}
+.footerArea h4 {
+    padding-bottom: 30px;
+}
+.footerArea a {
+    color: #444343;
+}
+
+.logofooter {
+    FONT-SIZE: 23PX;
+    LETTER-SPACING: 5PX;
+    padding: 0 10px;
+    font-size: 27px;
+    background: linear-gradient(90deg, #c442da 0%, #2196F3 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}

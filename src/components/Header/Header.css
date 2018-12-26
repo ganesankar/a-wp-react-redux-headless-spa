@@ -1,0 +1,224 @@
+/*HEADER CSS*/
+.header {
+    padding: 14px 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    transition: all 0.5s;
+    z-index: 997;
+    background: #fff
+}
+
+.fixedheader {
+    background: #fff;
+    -webkit-box-shadow: 0px 5px 20px rgba(35, 46, 53, 0.1);
+    box-shadow: 0px 5px 20px rgba(35, 46, 53, 0.1);
+}
+
+.header.header-scrolled {
+    box-shadow: -21.213px 21.213px 30px 0px rgba(158, 158, 158, 0.3);
+}
+
+@media (max-width: 673px) {
+    .logo {
+        margin-left: 20px
+    }
+}
+
+.logo {
+    FONT-SIZE: 23PX;
+    LETTER-SPACING: 5PX;
+    padding: 0 10px;
+    font-size: 27px;
+    background: linear-gradient(90deg, #673AB7 0%, #3F51B5 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
+.header .logo h1 {
+    font-size: 34px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: 3px
+}
+
+.header .logo h1 a,
+.header .logo h1 a:hover {
+    color: #fff;
+    padding-left: 10px;
+    border-left: 4px solid #3F51B5
+}
+
+.header .logo img {
+    padding: 0;
+    margin: 0
+}
+
+@media (max-width: 768px) {
+    .header .logo h1 {
+        font-size: 28px
+    }
+
+    .header .logo img {
+        max-height: 40px
+    }
+}
+
+.navMenu,
+.navMenu * {
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+
+.navMenu ul {}
+
+.navMenu li {
+    position: relative;
+    white-space: nowrap;
+    float: left;
+    padding: 0 10px;
+    font-weight: 500;
+}
+
+.navMenu li a {
+    /*background: linear-gradient(90deg, #673AB7 0%, #3F51B5 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    color: #212121;
+    background-color: transparent;*/
+    outline: none;
+    margin-bottom: -2px;
+    text-transform: uppercase;
+    font-family: 'Quicksand', sans-serif;
+    letter-spacing: 1px;
+    font-size: 14px;
+    font-weight: 400;
+    position: relative;
+    color: #1b1b1c;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color .2s cubic-bezier(.72, .16, .345, .875);
+    outline: none;
+    box-shadow: 0 0 black;
+}
+
+
+.responsiveMenu {
+    display: block
+}
+
+.wrapperMenu {
+    width: 24px;
+    height: 21px;
+
+    cursor: pointer;
+    transition: transform 330ms ease-out;
+    margin-right: 15px;
+    display: none;
+}
+
+.wrapperMenu.wrapperMenuOpen {
+    transform: rotate(-45deg);
+}
+
+.lineMenu {
+    background-color: #673AB7;
+    border-radius: 5px;
+    width: 100%;
+    height: 2px;
+
+}
+
+.lineMenu.half {
+    width: 50%;
+    background-color: #3F51B5;
+}
+
+.lineMenu.start {
+    transition: transform 330ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+    transform-origin: right;
+}
+
+.wrapperMenuOpen .lineMenu.start {
+    transform: rotate(-90deg) translateX(3px);
+}
+
+.lineMenu.end {
+    align-self: flex-end;
+    transition: transform 330ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+    transform-origin: left;
+}
+
+.wrapperMenuOpen .lineMenu.end {
+    transform: rotate(-90deg) translateX(-3px);
+}
+
+.responsiveMenu {
+    display: none;
+}
+
+.responsiveMenu ul,
+.responsiveMenu li {
+    margin: 0;
+    padding: 0
+}
+
+.responsiveMenuActive {
+    display: none;
+    ;
+}
+
+@media (max-width: 992px) {
+    .wrapperMenu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .navMenu {
+        display: none
+    }
+
+    .responsiveMenu {
+        width: 100%;
+        background-color: #fff;
+        margin-top: 0;
+        padding: 100px 0 0 0;
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        max-width: 300px;
+        min-height: 100vh;
+        z-index: 996;
+        box-shadow: -5px 0px 30px #00000021;
+        transition: all 1s ease-in-out;
+    }
+
+    .responsiveMenuActive {
+        display: block;
+        ;
+    }
+
+    .responsiveMenu li {
+        position: relative;
+        white-space: nowrap;
+        float: none;
+        display: block;
+    }
+
+    .responsiveMenu li a {
+        width: 100%;
+        padding: 15px;
+        display: block;
+        border-bottom: 1px solid #e4e4e4;
+        color: #000;
+        text-align: center;
+    }
+}
