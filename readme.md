@@ -44,7 +44,7 @@ If you install it in WordPress v4.7 or greater **it will work out of the box** a
 - webpack 4.x
 - babel 7.x
 
-`npm run build`
+`npm run build` or 		`npm run-script build`
 
 ### Code Quality
 
