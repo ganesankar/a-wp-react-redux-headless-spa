@@ -2,7 +2,7 @@
 WordPress theme built with react calling WP-API for content.
 
 ## Live Demo
-[It's now the live theme on my personal site.](https://ganny.in/wp-ui/reactjs/)
+[It's now the live theme on my personal site.](https://ganny.in/ui/reactjs/)
 
 ## Why?
 I wanted to play with the shiny new WP-REST-API, explore es6 and transpiling, and finally work on a full project using React+Redux.
