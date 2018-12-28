@@ -8,7 +8,7 @@ WordPress theme built with react calling WP-API for content.
 I wanted to play with the shiny new WP-REST-API, explore es6 and transpiling, and finally work on a full project using React+Redux.
 
 ## Current Features
-If you install it in WordPress v4.7 or greater **it will work out of the box** and have many of the features you'd want in a simple blog.
+If you install it in WordPress v5 or greater **it will work out of the box** and have many of the features you'd want in a simple blog.
 
 **Existing features include:**
 - Dynamic menus (main menu + footer menu)
